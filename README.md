@@ -28,10 +28,11 @@ docker-compose up -d
 
 Steps:
 ```shell
-1 - Create Token Authentication in Dynatrace UI, Access Token with scopes "apiTokens.write","openTelemetryTrace.ingest".
-2 - Configure OTEL Agent in file otel-collector-config.yaml adding API Endpoint and Token created by previos step.
-3 - Execute docker-compose up
-4 - See the tracers span ingested into Dynatrace.
+1 - After project clone, rename file env to .env
+2 - Create Token Authentication in Dynatrace UI, Access Token with scopes "apiTokens.write","openTelemetryTrace.ingest".
+3 - Configure OTEL Agent in file otel-collector-config.yaml adding API Endpoint and Token created by previos step.
+4 - Execute docker-compose up
+5 - See the tracers span ingested into Dynatrace.
 ```
 ```shell
 references:
