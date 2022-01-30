@@ -1,0 +1,18 @@
+receivers:
+  otlp:
+    protocols:
+      grpc:
+exporters:
+  otlphttp:
+    endpoint: "https://szm27047.live.dynatrace.com/api/v2/otlp"
+    headers: {"Authorization": "Api-Token dt0c01.PHJHQGRX54XGQFZJ45SHLINC.XIF7DUWTB6NBITMR5MQSSEMHM7435GJPBCPE7A24RMP3Y2VDD6VATBUE7WKUTCIK"}
+  logging:
+    loglevel: debug
+    sampling_initial: 5
+    sampling_thereafter: 200
+service:
+  pipelines:
+    traces:
+      receivers: [otlp]
+      processors: []
+      exporters: [otlphttp,logging]
