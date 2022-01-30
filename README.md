@@ -27,16 +27,17 @@ docker-compose up -d
 
 
 Steps:
-
+```shell
 1 - Create Token Authentication in Dynatrace UI, Access Token with scopes "apiTokens.write","openTelemetryTrace.ingest".
 2 - Configure OTEL Agent in file otel-collector-config.yaml adding API Endpoint and Token created by previos step.
 3 - Execute docker-compose up
 4 - See the tracers span ingested into Dynatrace.
-
+```
+```shell
 references:
 https://www.dynatrace.com/support/help/extend-dynatrace/opentelemetry/opentelemetry-ingest#expand--sample-collector-configuration
 https://www.dynatrace.com/support/help/extend-dynatrace/opentelemetry
-
+```
 
 Notes:
 
