@@ -61,3 +61,5 @@ stop the command `docker-compose down`.
 
 
 "# OpenTelemetry" 
+
+![Untitled Diagram](https://user-images.githubusercontent.com/34476524/151684854-7297ad59-74fd-47be-87b5-664c54f41830.jpg)
